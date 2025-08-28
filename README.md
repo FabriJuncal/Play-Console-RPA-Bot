@@ -82,15 +82,50 @@ npm run test:debug
 ```
 playstore-rpa-bot/
 ├─ src/
-│  ├─ main.ts              # Orquestador principal
-│  ├─ login.ts             # Gestión de login y sesión
-│  ├─ flows/               # Flujos de automatización
-│  ├─ helpers/             # Utilidades y helpers
-│  └─ types.ts             # Definiciones de tipos
-├─ assets/                 # Imágenes y recursos
-├─ config.json             # Configuración de la app
-└─ playwright.config.ts    # Configuración de Playwright
+│  ├─ main.ts               # Orquestador principal
+│  ├─ login.ts              # Gestión de login y sesión (Chrome)
+│  ├─ types.ts              # Definiciones de tipos
+│  ├─ flows/                # Flujos de automatización
+│  ├─ helpers/              # Utilidades y helpers (UI, archivos, navegación)
+│  └─ setup/                # Setup/teardown global de Playwright
+├─ assets/                  # Imágenes y recursos de la app
+├─ dist/                    # Código compilado (tsc)
+├─ CHROME-SETUP.md          # Guía para uso con Google Chrome
+├─ INSTALACION.md           # Guía de instalación paso a paso
+├─ USO.md                   # Guía de ejecución y modos de uso
+├─ playwright.config.ts     # Configuración de Playwright (channel: 'chrome')
+├─ start.js                 # Script de arranque (ts-node)
+├─ verify-chrome.js         # Verificación de Chrome con Playwright
+├─ config.json              # Configuración de la app (tuya)
+├─ config.example.json      # Ejemplo de configuración
+├─ env.example              # Variables de entorno de ejemplo
+├─ tsconfig.json            # Configuración de TypeScript
+├─ .eslintrc.js             # Reglas de ESLint
+├─ .prettierrc              # Configuración de Prettier
+├─ .gitignore               # Ignorar artefactos y secretos
+└─ package.json             # Dependencias y scripts
 ```
+
+## 📄 Licencia
+
+Este proyecto se distribuye bajo la licencia **MIT**.
+
+Copyright (c) 2025 [Tu Nombre]
+
+Se concede permiso, de forma gratuita, a cualquier persona que obtenga una copia de este software y de los archivos de documentación asociados (el "Software"), para tratar el Software sin restricción, incluyendo sin limitación los derechos a usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender copias del Software, y a permitir a las personas a las que se les proporcione el Software a hacer lo mismo, sujeto a las siguientes condiciones:
+
+El aviso de copyright anterior y este aviso de permiso se incluirán en todas las copias o partes sustanciales del Software.
+
+EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA, INCLUYENDO PERO NO LIMITADO A GARANTÍAS DE COMERCIABILIDAD, APTITUD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO LOS AUTORES O TITULARES DEL COPYRIGHT SERÁN RESPONSABLES DE NINGUNA RECLAMACIÓN, DAÑO U OTRA RESPONSABILIDAD, YA SEA EN UNA ACCIÓN DE CONTRATO, AGRAVIO O CUALQUIER OTRO MOTIVO, QUE SURJA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U OTRO TIPO DE ACCIONES EN EL SOFTWARE.
+
+### Disclaimer sobre Google y sus Términos
+
+- Este proyecto no está afiliado, patrocinado ni avalado por Google LLC.
+- El uso de este bot para automatizar Google Play Console puede estar sujeto a los **Términos de Servicio** y **políticas** de Google. Es tu responsabilidad revisar y cumplir dichos términos.
+- El autor no se hace responsable por suspensiones de cuenta, bloqueos, captchas, limitaciones o cualquier consecuencia derivada del uso de este software.
+- Utiliza este proyecto con fines educativos y bajo tu propio riesgo.
+
+Si vas a publicar en GitHub, se recomienda incluir un archivo `LICENSE` con el texto completo de la licencia MIT.
 
 ## 🔄 Flujos Disponibles
 
