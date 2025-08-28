@@ -1,0 +1,54 @@
+{
+  "name": "playstore-rpa-bot",
+  "version": "1.0.0",
+  "description": "Bot RPA para automatizar la creación de aplicaciones en Google Play Store",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node start.js",
+    "dev": "ts-node src/main.ts",
+    "clean": "rimraf dist",
+    "rebuild": "npm run clean && npm run build",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write src/**/*.ts",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "install-browsers": "playwright install chrome",
+    "install-chrome": "playwright install chrome",
+    "install-firefox": "playwright install firefox",
+    "install-webkit": "playwright install webkit",
+    "verify-chrome": "node verify-chrome.js",
+    "flow:create": "node start.js createApp",
+    "flow:store": "node start.js storeListing",
+    "flow:policies": "node start.js policies",
+    "flow:audience": "node start.js audience",
+    "flow:rating": "node start.js rating",
+    "flow:safety": "node start.js safety",
+    "flow:testing": "node start.js testing",
+    "flow:full": "node start.js"
+  },
+  "keywords": [
+    "rpa",
+    "playwright",
+    "automation",
+    "playstore",
+    "google-play"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.40.0",
+    "dotenv": "^16.3.0",
+    "playwright": "^1.40.0"
+  }
+}

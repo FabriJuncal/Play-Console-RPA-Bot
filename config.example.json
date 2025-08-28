@@ -1,0 +1,60 @@
+{
+  "app": {
+    "name": "Mi Aplicación Ejemplo",
+    "packageName": "com.ejemplo.miapp",
+    "version": "1.0.0",
+    "description": "Una aplicación de ejemplo para demostrar las capacidades del bot RPA",
+    "category": "Productivity",
+    "tags": ["productivity", "tools", "utility", "example"]
+  },
+  "storeListing": {
+    "shortDescription": "Aplicación de ejemplo para automatización RPA",
+    "fullDescription": "Esta es una aplicación de ejemplo que demuestra cómo el bot RPA puede automatizar completamente el proceso de creación y configuración de aplicaciones en Google Play Store. Incluye todas las funcionalidades necesarias para una publicación exitosa.",
+    "keywords": "rpa, automation, bot, playstore, google play, app creation",
+    "website": "https://ejemplo.com",
+    "email": "support@ejemplo.com",
+    "privacyPolicyUrl": "https://ejemplo.com/privacy",
+    "termsOfServiceUrl": "https://ejemplo.com/terms"
+  },
+  "policies": {
+    "ads": false,
+    "targetAudience": "Everyone",
+    "contentRating": "3+",
+    "dataCollection": {
+      "personalInfo": false,
+      "location": false,
+      "deviceInfo": true,
+      "analytics": true
+    }
+  },
+  "testing": {
+    "internalTesting": true,
+    "closedTesting": false,
+    "openTesting": false
+  },
+  "assets": {
+    "phone": {
+      "required": 2,
+      "optional": 6,
+      "dimensions": "1080x1920+"
+    },
+    "sevenInch": {
+      "required": 0,
+      "optional": 2,
+      "dimensions": "1200x1920"
+    },
+    "tenInch": {
+      "required": 0,
+      "optional": 2,
+      "dimensions": "1920x1200"
+    },
+    "icon": {
+      "required": false,
+      "dimensions": "512x512"
+    },
+    "featureGraphic": {
+      "required": false,
+      "dimensions": "1024x500"
+    }
+  }
+}

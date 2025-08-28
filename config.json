@@ -1,0 +1,60 @@
+{
+  "app": {
+    "name": "Mi Aplicación",
+    "packageName": "com.ejemplo.miapp",
+    "version": "1.0.0",
+    "description": "Descripción de mi aplicación",
+    "category": "Productivity",
+    "tags": ["productivity", "tools", "utility"]
+  },
+  "storeListing": {
+    "shortDescription": "Descripción corta de la app",
+    "fullDescription": "Descripción completa y detallada de la aplicación con todas sus características y funcionalidades.",
+    "keywords": "palabra clave 1, palabra clave 2, palabra clave 3",
+    "website": "https://ejemplo.com",
+    "email": "support@ejemplo.com",
+    "privacyPolicyUrl": "https://ejemplo.com/privacy",
+    "termsOfServiceUrl": "https://ejemplo.com/terms"
+  },
+  "policies": {
+    "ads": false,
+    "targetAudience": "Everyone",
+    "contentRating": "3+",
+    "dataCollection": {
+      "personalInfo": false,
+      "location": false,
+      "deviceInfo": true,
+      "analytics": true
+    }
+  },
+  "testing": {
+    "internalTesting": true,
+    "closedTesting": false,
+    "openTesting": false
+  },
+  "assets": {
+    "phone": {
+      "required": 2,
+      "optional": 6,
+      "dimensions": "1080x1920+"
+    },
+    "sevenInch": {
+      "required": 0,
+      "optional": 2,
+      "dimensions": "1200x1920"
+    },
+    "tenInch": {
+      "required": 0,
+      "optional": 2,
+      "dimensions": "1920x1200"
+    },
+    "icon": {
+      "required": false,
+      "dimensions": "512x512"
+    },
+    "featureGraphic": {
+      "required": false,
+      "dimensions": "1024x500"
+    }
+  }
+}
